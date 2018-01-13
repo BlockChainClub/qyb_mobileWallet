@@ -1,0 +1,15 @@
+{
+    "libz.tbd": 4,
+    "QuartzCore.framework": 1,
+    "Social.framework": 1,
+    "MessageUI.framework": 1,
+    "AudioToolbox.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "CoreTelephony.framework": 1,
+    "Security.framework": 3,
+    "LocalAuthentication.framework": 1,
+    "WebKit.framework": 1,
+    "libc++.tbd": 1,
+    "AddressBook.framework": 1,
+    "libsqlite3.0.tbd": 1
+}
