@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="311100" id="one.chainclub.copay" ios-CFBundleVersion="3.11.1" version="3.11.1" xmlns="http://www.w3.org/ns/widgets">
+<widget android-versionCode="311100" id="one.chainclub.qyb" ios-CFBundleVersion="3.11.1" version="3.11.1" xmlns="http://www.w3.org/ns/widgets">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -100,30 +100,30 @@
     <config-file parent="ITSAppUsesNonExemptEncryption" target="*-Info.plist">
         <false />
     </config-file>
-    <icon height="180" src="resources/copay/ios/icon/icon-60@3x.png" width="180" />
-    <icon height="60" src="resources/copay/ios/icon/icon-60.png" width="60" />
-    <icon height="120" src="resources/copay/ios/icon/icon-60@2x.png" width="120" />
-    <icon height="76" src="resources/copay/ios/icon/icon-76.png" width="76" />
-    <icon height="152" src="resources/copay/ios/icon/icon-76@2x.png" width="152" />
-    <icon height="167" src="resources/copay/ios/icon/icon-83.5@2x.png" width="167" />
-    <icon height="40" src="resources/copay/ios/icon/icon-40.png" width="40" />
-    <icon height="80" src="resources/copay/ios/icon/icon-40@2x.png" width="80" />
-    <icon height="57" src="resources/copay/ios/icon/icon.png" width="57" />
-    <icon height="114" src="resources/copay/ios/icon/icon@2x.png" width="114" />
-    <icon height="72" src="resources/copay/ios/icon/icon-72.png" width="72" />
-    <icon height="144" src="resources/copay/ios/icon/icon-72@2x.png" width="144" />
-    <icon height="29" src="resources/copay/ios/icon/icon-small.png" width="29" />
-    <icon height="58" src="resources/copay/ios/icon/icon-small@2x.png" width="58" />
-    <icon height="87" src="resources/copay/ios/icon/icon-small@3x.png" width="87" />
-    <icon height="50" src="resources/copay/ios/icon/icon-50.png" width="50" />
-    <icon height="100" src="resources/copay/ios/icon/icon-50@2x.png" width="100" />
-    <icon height="1024" src="resources/copay/ios/icon/icon-1024.png" width="1024" />
-    <splash src="resources/copay/ios/splash/Default@2x~universal~anyany.png" />
-    <splash src="resources/copay/ios/splash/Default@2x~universal~comany.png" />
-    <splash src="resources/copay/ios/splash/Default@2x~universal~comcom.png" />
-    <splash src="resources/copay/ios/splash/Default@3x~universal~anyany.png" />
-    <splash src="resources/copay/ios/splash/Default@3x~universal~anycom.png" />
-    <splash src="resources/copay/ios/splash/Default@3x~universal~comany.png" />
+    <icon height="180" src="resources/qyb/ios/icon/icon-60@3x.png" width="180" />
+    <icon height="60" src="resources/qyb/ios/icon/icon-60.png" width="60" />
+    <icon height="120" src="resources/qyb/ios/icon/icon-60@2x.png" width="120" />
+    <icon height="76" src="resources/qyb/ios/icon/icon-76.png" width="76" />
+    <icon height="152" src="resources/qyb/ios/icon/icon-76@2x.png" width="152" />
+    <icon height="167" src="resources/qyb/ios/icon/icon-83.5@2x.png" width="167" />
+    <icon height="40" src="resources/qyb/ios/icon/icon-40.png" width="40" />
+    <icon height="80" src="resources/qyb/ios/icon/icon-40@2x.png" width="80" />
+    <icon height="57" src="resources/qyb/ios/icon/icon.png" width="57" />
+    <icon height="114" src="resources/qyb/ios/icon/icon@2x.png" width="114" />
+    <icon height="72" src="resources/qyb/ios/icon/icon-72.png" width="72" />
+    <icon height="144" src="resources/qyb/ios/icon/icon-72@2x.png" width="144" />
+    <icon height="29" src="resources/qyb/ios/icon/icon-small.png" width="29" />
+    <icon height="58" src="resources/qyb/ios/icon/icon-small@2x.png" width="58" />
+    <icon height="87" src="resources/qyb/ios/icon/icon-small@3x.png" width="87" />
+    <icon height="50" src="resources/qyb/ios/icon/icon-50.png" width="50" />
+    <icon height="100" src="resources/qyb/ios/icon/icon-50@2x.png" width="100" />
+    <icon height="1024" src="resources/qyb/ios/icon/icon-1024.png" width="1024" />
+    <splash src="resources/qyb/ios/splash/Default@2x~universal~anyany.png" />
+    <splash src="resources/qyb/ios/splash/Default@2x~universal~comany.png" />
+    <splash src="resources/qyb/ios/splash/Default@2x~universal~comcom.png" />
+    <splash src="resources/qyb/ios/splash/Default@3x~universal~anyany.png" />
+    <splash src="resources/qyb/ios/splash/Default@3x~universal~anycom.png" />
+    <splash src="resources/qyb/ios/splash/Default@3x~universal~comany.png" />
     <allow-navigation href="*" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="none" />

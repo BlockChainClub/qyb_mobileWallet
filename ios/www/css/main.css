@@ -14840,7 +14840,7 @@ account-selector {
           left: 15%;
           width: 70%;
           max-height: 55%; } }
-  #pin .circle-copay {
+  #pin .circle-qyb {
     border-radius: 50%;
     box-shadow: 0 0 3px 0px #5b5b5b;
     transition: background-color .2s ease-in-out;
@@ -14854,7 +14854,7 @@ account-selector {
     padding: 7%;
     margin: 5%;
     border: 1px solid #192c3a; }
-  #pin .filled-copay {
+  #pin .filled-qyb {
     background-color: #1abb9b; }
   #pin .filled-bitpay {
     background-color: #1f3598; }

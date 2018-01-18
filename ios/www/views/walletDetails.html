@@ -36,12 +36,14 @@
         ng-style="{'transform': amountScale}"
         ng-class="{amount__balance: amountIsCollapsible}">
         <strong class="size-36">{{status.totalBalanceStr}}</strong>
+        <!--
         <div
           class="size-14 amount-alternative"
           ng-if="status.totalBalanceAlternative && wallet.network == 'livenet'"
           ng-style="{opacity: altAmountOpacity}">
           {{status.totalBalanceAlternative}} {{status.alternativeIsoCode}}
         </div>
+      -->
       </div>
 
       <div ng-style="{'transform': amountScale}"
@@ -116,12 +118,14 @@
         ng-style="{'transform': amountScale}"
         ng-class="{amount__balance: amountIsCollapsible}">
         <strong class="size-36">{{status.totalBalanceStr}}</strong>
+        <!--
         <div
           class="size-14 amount-alternative"
           ng-if="status.totalBalanceAlternative && wallet.network == 'livenet'"
           ng-style="{opacity: altAmountOpacity}">
           {{status.totalBalanceAlternative}} {{status.alternativeIsoCode}}
         </div>
+      -->
       </div>
 
       <div ng-style="{'transform': amountScale}"
@@ -171,7 +175,7 @@
     </a>
 
     <a class="wallet-not-backed-up-warning" ng-if="lowUtxosWarning" ui-sref="tabs.wallet.addresses({walletId:wallet.id,from: 'tabs.wallet'})" translate>
-      Spending this balance will need significant Bitcoin network fees
+      Spending this balance will need significant Qybcoin network fees
     </a>
 
 

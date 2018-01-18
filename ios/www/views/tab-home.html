@@ -48,7 +48,7 @@
         </i>
       </div>
       <div class="title" translate>
-        Your QYBcoin wallet is ready!
+        Your bitcoin wallet is ready!
       </div>
       <div class="subtitle" translate>
         On this screen you can see all your wallets, accounts, and assets.
@@ -94,7 +94,7 @@
     <div class="list card" ng-if="walletsBtc[0]">
       <div class="item item-icon-right item-heading">
         <img class="wallet-coin-logo" src="img/icon-bitcoin.svg" width="18">
-        <span translate>Bitcoin Wallets</span>
+        <span translate>Qybcoin Wallets</span>
         <a ui-sref="tabs.add"><i class="icon ion-ios-plus-empty list-add-button"></i></a>
       </div>
       <div>
@@ -109,7 +109,7 @@
     <div class="list card" ng-if="walletsBch[0]">
       <div class="item item-icon-right item-heading">
         <img class="wallet-coin-logo" src="img/bitcoin-cash-logo.svg" width="22">
-        <span translate>Bitcoin Cash Wallets</span>
+        <span translate>Qybcoin Cash Wallets</span>
         <a ui-sref="tabs.add({coin:'bch'})"><i class="icon ion-ios-plus-empty list-add-button"></i></a>
       </div>
       <div>
@@ -124,8 +124,7 @@
     <div class="ng-hide list card" ng-show="walletsBtc[0] && bitpayCardItems.length>0" ng-include="'views/includes/bitpayCardsCard.html'"></div>
     <div class="ng-hide list card" ng-show="walletsBtc[0] && buyAndSellItems.length>0" ng-include="'views/includes/buyAndSellCard.html'"></div>
     <div class="ng-hide list card" ng-show="homeIntegrations.length>0" ng-include="'views/includes/homeIntegrations.html'"></div>
-    <!-- @empty modify at 2018-01-13 23:39 取消该功能 -->
-    <!-- <div class="ng-hide list card" ng-show="nextStepsItems.length>0 && !isWindowsPhoneApp" ng-include="'views/includes/nextSteps.html'"></div> -->
+    <!--<div class="ng-hide list card" ng-show="nextStepsItems.length>0 && !isWindowsPhoneApp" ng-include="'views/includes/nextSteps.html'"></div>-->
 
   </ion-content>
 </ion-view>

@@ -29,11 +29,12 @@
         </a>
 
         <div ng-show="showAdv">
+          <!--
           <label class="item item-input item-stacked-label">
             <span class="input-label">Wallet Service URL</span>
             <input type="text" ng-model="formData.bwsurl" placeholder="https://bws.bitpay.com/bws/api">
           </label>
-
+        -->
           <label class="item item-input item-select">
             <div class="input-label" translate>
               Wallet Key
@@ -113,7 +114,7 @@
             placeholder="{{'BIP32 path for address derivation'|translate}}"
             ng-model="formData.derivationPath">
           </label>
-
+<!--
           <ion-toggle ng-show="formData.seedSource.supportsTestnet && formData.coin == 'btc'" ng-model="formData.testnetEnabled" toggle-class="toggle-positive">
             <span translate>Testnet</span>
           </ion-toggle>
@@ -122,7 +123,7 @@
             <span translate>Single Address Wallet</span>
             <small translate>For audit purposes</small>
           </ion-toggle>
-
+        -->
         </div> <!-- advanced -->
       </div> <!-- list -->
 

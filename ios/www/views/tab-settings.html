@@ -13,6 +13,7 @@
         <span>{{'Address Book' | translate}}</span>
         <i class="icon bp-arrow-right"></i>
       </a>
+      <!--
       <a class="item item-icon-left item-icon-right" ng-click="openExternalLink()">
         <i class="icon big-icon-svg">
           <img src="img/icon-help-support.svg" class="bg"/>
@@ -22,6 +23,8 @@
           <img src="img/icon-link.svg" class="bg just-a-hint"/>
         </i>
       </a>
+      -->
+      <!--
       <a class="item item-icon-left item-icon-right" ui-sref="tabs.feedback">
         <i class="icon big-icon-svg">
           <img src="img/icon-send-feedback.svg" class="bg"/>
@@ -29,6 +32,7 @@
         <span>{{'Send Feedback' | translate}}</span>
         <i class="icon bp-arrow-right"></i>
       </a>
+      -->
       <a ng-if="isCordova && !isWindowsPhoneApp" class="item item-icon-left item-icon-right" ui-sref="tabs.shareApp({score: 4, skipped: true, fromSettings: true})">
         <i class="icon big-icon-svg">
           <img src="img/icon-heart.svg" class="bg"/>
@@ -39,15 +43,18 @@
 
       <div class="item item-divider">{{'Preferences' | translate}}</div>
 
+      <!--
       <a class="item item-icon-left item-icon-right" ui-sref="tabs.preferencesCash">
         <i class="icon big-icon-svg">
           <img src="img/icon-bch.svg" class="bg bch bch-enabled"/>
         </i>
-        <span class="setting-title">Bitcoin Cash</span>
+        <span class="setting-title">Qybcoin Cash</span>
         <i class="icon bp-arrow-right"></i>
       </a>
+      -->
 
-      <a class="item item-icon-left item-icon-right" ui-sref="tabs.notifications">
+      <!--
+        <a class="item item-icon-left item-icon-right" ui-sref="tabs.notifications">
         <i class="icon big-icon-svg">
           <img src="img/icon-notifications.svg" class="bg"/>
         </i>
@@ -64,7 +71,6 @@
        </span>
        <i class="icon bp-arrow-right"></i>
      </a>
-
       <a class="item has-setting-value item-icon-left item-icon-right" ui-sref="tabs.altCurrency">
         <i class="icon big-icon-svg">
           <img src="img/icon-alternative-currency.svg" class="bg"/>
@@ -75,12 +81,12 @@
         </span>
         <i class="icon bp-arrow-right"></i>
       </a>
-
+      -->
       <a class="item has-setting-value item-icon-left item-icon-right" ui-sref="tabs.fee">
         <i class="icon big-icon-svg">
           <img src="img/icon-network.svg" class="bg"/>
         </i>
-        <span class="setting-title">{{'Bitcoin Network Fee Policy' | translate}}</span>
+        <span class="setting-title">{{'Qybcoin Network Fee Policy' | translate}}</span>
         <span class="setting-value">
           {{feeOpts[currentFeeLevel]|translate}}
         </span>
@@ -97,7 +103,7 @@
         <i class="icon bp-arrow-right"></i>
       </a>
 
-      <div class="item item-divider" ng-show="walletsBtc[0]">{{'Bitcoin Wallets' | translate}}</div>
+      <div class="item item-divider" ng-show="walletsBtc[0]">{{'Qybcoin Wallets' | translate}}</div>
 
       <a class="item item-icon-left item-icon-right" href
            ui-sref="tabs.preferences({'walletId': wallet.id})"
@@ -105,7 +111,7 @@
         <span ng-include="'views/includes/walletListSettings.html'"></span>
       </a>
 
-      <div class="item item-divider" ng-show="walletsBch[0]">{{'Bitcoin Cash Wallets' | translate}}</div>
+      <div class="item item-divider" ng-show="walletsBch[0]">{{'Qybcoin Cash Wallets' | translate}}</div>
 
       <a class="item item-icon-left item-icon-right" href
            ui-sref="tabs.preferences({'walletId': wallet.id})"

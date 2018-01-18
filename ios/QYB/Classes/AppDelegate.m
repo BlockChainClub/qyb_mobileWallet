@@ -27,11 +27,15 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import <Bugly/Bugly.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+    //bugly
+    [Bugly startWithAppId:@"900054200"];
+    
     self.viewController = [[MainViewController alloc] init];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
