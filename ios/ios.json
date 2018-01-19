@@ -137,26 +137,8 @@
           ],
           "CFBundleURLTypes": [
             {
-              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>bitcoin</string></array></dict><dict><key>CFBundleURLSchemes</key><array><string>QYBcoin</string></array></dict><dict><key>CFBundleURLSchemes</key><array><string>bitcoincash</string></array></dict></array>",
+              "xml": "<array><dict><key>CFBundleURLSchemes</key><array><string>bitcoin</string></array></dict><dict><key>CFBundleURLSchemes</key><array><string>qyb</string></array></dict><dict><key>CFBundleURLSchemes</key><array><string>bitcoincash</string></array></dict></array>",
               "count": 1
-            }
-          ],
-          "UIStatusBarHidden": [
-            {
-              "xml": "<true />",
-              "count": 3
-            }
-          ],
-          "UIViewControllerBasedStatusBarAppearance": [
-            {
-              "xml": "<false />",
-              "count": 3
-            }
-          ],
-          "ITSAppUsesNonExemptEncryption": [
-            {
-              "xml": "<false />",
-              "count": 3
             }
           ]
         }
@@ -185,89 +167,89 @@
   },
   "installed_plugins": {
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-clipboard": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-spinner-dialog": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-uniquedeviceid": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-touch-id": {
       "FACEID_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-transport-security": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-ios-requires-fullscreen": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-android-fingerprint-auth": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-swift-support": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-qrscanner": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-customurlscheme": {
       "URL_SCHEME": "bitcoin",
-      "SECOND_URL_SCHEME": "QYBcoin",
+      "SECOND_URL_SCHEME": "qyb",
       "THIRD_URL_SCHEME": "bitcoincash",
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-custom-config": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     },
     "cordova-plugin-fcm": {
-      "PACKAGE_NAME": "com.bitpay.QYBcoin"
+      "PACKAGE_NAME": "one.chainclub.qyb"
     }
   },
   "dependent_plugins": {},

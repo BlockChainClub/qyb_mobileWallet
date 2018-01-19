@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X6 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="47.5597mm" height="47.5596mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 2608 2608"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#FEFEFE}
-   ]]>
-  </style>
- </defs>
- <g id="图层_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_220087848">
-   <path id="_265531376" class="fil0" d="M1645 2201c17,112 70,212 146,289l0 0c5,5 11,10 16,16 -155,66 -326,102 -504,102l0 0c-717,0 -1304,-587 -1304,-1304l0 0c0,-213 52,-414 143,-592 22,36 48,69 78,99l0 0c55,55 122,98 197,124 -48,114 -74,238 -74,369l0 0c0,528 432,960 960,960l0 0c120,0 235,-22 341,-63z"/>
-   <path id="_526042776" class="fil0" d="M1304 0l0 0c717,0 1304,587 1304,1304l0 0c0,161 -30,315 -83,458l-2 -2 0 0c-81,-81 -189,-136 -309,-149 33,-96 51,-200 51,-307l0 0c0,-528 -432,-960 -960,-960l0 0c-71,0 -140,8 -207,23 -17,-111 -70,-210 -146,-286l0 0c-8,-8 -17,-16 -26,-24 120,-37 247,-56 379,-56z"/>
-   <path class="fil0" d="M2157 1723l0 0c222,0 402,180 402,402l0 0c0,222 -180,402 -402,402l0 0c-222,0 -402,-180 -402,-402l0 0c0,-222 180,-402 402,-402z"/>
-   <path class="fil0" d="M586 45l0 0c222,0 401,180 401,401l0 0c0,222 -180,401 -401,401l0 0c-222,0 -401,-180 -401,-401l0 0c0,-222 180,-401 401,-401z"/>
-  </g>
+<svg width="22" height="32" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+ <title>Imported Layers</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(1.2781494251112375,0,0,1.3231229829686348,-0.32487849212282033,-0.5070610371008354) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="18.391759" x="-0.433826" stroke-width="0" fill="#ffffff">Q</text>
  </g>
 </svg>

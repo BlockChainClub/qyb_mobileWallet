@@ -17,11 +17,11 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.bitpay.copay</string>
+	<string>one.chainclub.qyb</string>
 	<key>PROJECT_ID</key>
-	<string>bitpay-wallet</string>
+	<string>qybcoin-wallet</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bitpay-wallet.appspot.com</string>
+	<string>qybcoin-wallet.chainclub.one</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>

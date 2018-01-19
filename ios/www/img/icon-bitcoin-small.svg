@@ -1,23 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X6 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="47.5597mm" height="47.5596mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 7971 7971"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#5D5D5D;fill-opacity:0.639216}
-   ]]>
-  </style>
- </defs>
- <g id="图层_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_444480480">
-   <path id="_265531376" class="fil0" d="M5029 6728c51,342 213,649 447,884l1 1c16,16 33,32 50,47 -475,201 -995,312 -1541,312l0 0c-2192,0 -3986,-1794 -3986,-3986l0 0c0,-650 158,-1265 437,-1808 67,110 146,212 237,302l1 1c168,168 374,299 603,378 -146,348 -227,728 -227,1127l0 0c0,1614 1321,2935 2935,2935l0 0c367,0 719,-68 1043,-193z"/>
-   <path id="_526042776" class="fil0" d="M3986 0l0 0c2192,0 3986,1794 3986,3986l0 0c0,492 -90,963 -255,1399l-6 -6 -1 -1c-248,-248 -578,-414 -944,-455 100,-295 154,-610 154,-937l0 0c0,-1614 -1321,-2935 -2935,-2935l0 0c-217,0 -428,24 -632,69 -53,-338 -213,-641 -446,-874l-1 -1c-25,-25 -52,-50 -79,-73 367,-112 755,-172 1157,-172z"/>
-   <path class="fil0" d="M6593 5267l0 0c678,0 1228,550 1228,1228l0 0c0,678 -550,1228 -1228,1228l0 0c-678,0 -1228,-550 -1228,-1228l0 0c0,-678 550,-1228 1228,-1228z"/>
-   <path class="fil0" d="M1791 137l0 0c677,0 1226,549 1226,1226l0 0c0,677 -549,1226 -1226,1226l0 0c-677,0 -1226,-549 -1226,-1226l0 0c0,-677 549,-1226 1226,-1226z"/>
-  </g>
+<svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+ <title>Bitcoin_Symbol</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text transform="matrix(0.7227930373114613,0,0,0.6938979168094579,-0.23480900005988525,-1.3078978814845574) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="19.512208" x="-0.794837" stroke-width="0" fill="#999999">Q</text>
  </g>
 </svg>

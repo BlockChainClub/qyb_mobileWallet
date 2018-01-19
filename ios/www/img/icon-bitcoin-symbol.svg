@@ -1,23 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X6 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="47.5597mm" height="47.5596mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 3238 3238"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#5D5D5D}
-   ]]>
-  </style>
- </defs>
- <g id="图层_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_444479616">
-   <path id="_265531376" class="fil0" d="M2043 2733c21,139 86,264 182,359l0 0c7,7 13,13 20,19 -193,81 -404,127 -626,127l0 0c-890,0 -1619,-729 -1619,-1619l0 0c0,-264 64,-514 177,-735 27,45 59,86 96,123l0 0c68,68 152,121 245,154 -59,141 -92,296 -92,458l0 0c0,656 536,1192 1192,1192l0 0c149,0 292,-28 424,-78z"/>
-   <path id="_526042776" class="fil0" d="M1619 0l0 0c890,0 1619,729 1619,1619l0 0c0,200 -37,391 -104,568l-2 -2 0 0c-101,-101 -235,-168 -383,-185 41,-120 63,-248 63,-381l0 0c0,-656 -536,-1192 -1192,-1192l0 0c-88,0 -174,10 -257,28 -21,-137 -87,-261 -181,-355l0 0c-10,-10 -21,-20 -32,-30 149,-45 307,-70 470,-70z"/>
-   <path class="fil0" d="M2678 2140l0 0c275,0 499,223 499,499l0 0c0,275 -223,499 -499,499l0 0c-275,0 -499,-223 -499,-499l0 0c0,-275 223,-499 499,-499z"/>
-   <path class="fil0" d="M727 55l0 0c275,0 498,223 498,498l0 0c0,275 -223,498 -498,498l0 0c-275,0 -498,-223 -498,-498l0 0c0,-275 223,-498 498,-498z"/>
-  </g>
+<svg width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{fill:#5D5D5D;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text transform="matrix(0.7179660496543628,0,0,0.7360395323342062,1.0511941289977225,0.414839150517253) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="16.44605" x="-2.45061" stroke-width="0" fill="#666666">Q</text>
  </g>
 </svg>
