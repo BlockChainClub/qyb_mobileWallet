@@ -23,4 +23,7 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+    #include "BuglyHotfixConfuse_pch.h"
+
 #endif
+

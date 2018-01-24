@@ -1,0 +1,15 @@
+framework module BuglyHotfix {
+	umbrella header "Bugly.h"
+	header "BuglyConfig.h"
+	header "BuglyLog.h"
+	header "BuglyMender.h"
+	
+	export *
+	module * { export * }
+	
+	link framework "Foundation"
+	link framework "Security"
+	link framework "SystemConfiguration"
+	link "c++"
+	link "z"
+}
