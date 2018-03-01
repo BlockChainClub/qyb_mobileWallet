@@ -30,11 +30,11 @@
 #import <BuglyHotfix/Bugly.h>
 #import <BuglyHotfix/BuglyMender.h>
 #import "JPEngine.h"
+#import <PgyUpdate/PgyUpdateManager.h>
 
 @interface AppDelegate ()<BuglyDelegate>
 
 @end
-
 
 @implementation AppDelegate
 
@@ -42,10 +42,16 @@
 {
     //bugly
     [self configBugly];
+    
     self.viewController = [[MainViewController alloc] init];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    //启动更新检查SDK
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"e8f6ca171babff510f6e483fa9656cc8"];
+    [[PgyUpdateManager sharedPgyManager] checkUpdate];
+    
+    
 }
-
 
 - (void)configBugly {
     //初始化 Bugly 异常上报
