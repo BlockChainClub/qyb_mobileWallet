@@ -75,7 +75,6 @@
 		CFAE2A33E473415AB5D7558C /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A49F32E7CB78459FBF3BFBC4 /* Toast+UIView.m */; };
 		D82719779C4E46C2A3B53339 /* CDVClipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 083885D3551C4EC4A0D3787D /* CDVClipboard.m */; };
 		E16E3296204857CC0001720C /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16E3294204857CC0001720C /* Bugly.framework */; };
-		E16E329B2048593F0001720C /* BuglyHotfix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16E329A2048593F0001720C /* BuglyHotfix.framework */; };
 		E16E32A1204859980001720C /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E16E329F204859980001720C /* JPEngine.m */; };
 		E16E32A2204859980001720C /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = E16E32A0204859980001720C /* JSPatch.js */; };
 		E16E32A420485AE00001720C /* PgyUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16E32A320485AE00001720C /* PgyUpdate.framework */; };
@@ -224,8 +223,8 @@
 		E0AFD93484234EB6A106E66F /* QRScanner.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = QRScanner.swift; path = "cordova-plugin-qrscanner/QRScanner.swift"; sourceTree = "<group>"; };
 		E0B6D23AB00F4D73B44B428D /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
 		E122EEFA5BD745888F0F4983 /* FCMPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FCMPlugin.h; path = "cordova-plugin-fcm/FCMPlugin.h"; sourceTree = "<group>"; };
+		E141E578204C525B005E4777 /* QYB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = QYB.entitlements; path = QYB/QYB.entitlements; sourceTree = "<group>"; };
 		E16E3294204857CC0001720C /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
-		E16E329A2048593F0001720C /* BuglyHotfix.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuglyHotfix.framework; sourceTree = "<group>"; };
 		E16E329D204859980001720C /* BuglyHotfixConfuse_pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuglyHotfixConfuse_pch.h; sourceTree = "<group>"; };
 		E16E329E204859980001720C /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		E16E329F204859980001720C /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
@@ -272,7 +271,6 @@
 				8482EC5AD9664B1A8A9CBE90 /* FirebaseAnalytics.framework in Frameworks */,
 				E16E3296204857CC0001720C /* Bugly.framework in Frameworks */,
 				A6A1F0B226D04F3E8FEF0B90 /* FirebaseCore.framework in Frameworks */,
-				E16E329B2048593F0001720C /* BuglyHotfix.framework in Frameworks */,
 				28B9BF65CF8E4AF5ACF9EA62 /* FirebaseInstanceID.framework in Frameworks */,
 				A11D7938ED1F4B159E57C861 /* FirebaseMessaging.framework in Frameworks */,
 				CD01D3C496134BB4BF804443 /* GoogleInterchangeUtilities.framework in Frameworks */,
@@ -313,10 +311,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E141E578204C525B005E4777 /* QYB.entitlements */,
 				E16E32A320485AE00001720C /* PgyUpdate.framework */,
 				E16E3294204857CC0001720C /* Bugly.framework */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
-				E16E329A2048593F0001720C /* BuglyHotfix.framework */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -550,6 +548,11 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = S85C3R4P94;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -700,6 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = QYB/QYB.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = S85C3R4P94;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -738,6 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = QYB/QYB.entitlements;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = S85C3R4P94;
 				FRAMEWORK_SEARCH_PATHS = (
