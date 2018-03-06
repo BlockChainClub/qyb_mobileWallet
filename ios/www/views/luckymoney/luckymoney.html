@@ -1,0 +1,80 @@
+<ion-view class="settings luckymoney" show-tabs>
+  <ion-nav-bar class="bar-royal">
+    <ion-nav-title>
+      <span translate>Send Lucky Money</span>
+    </ion-nav-title>
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <ion-nav-buttons side="right">
+      <button class="button back-button buttons button-clear header-item" ng-click="goHistory()">
+        {{'History' | translate}}
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <form name="luckymoneyForm" ng-submit="order()" novalidate>
+      <div class="list">
+        <label class="item item-input item-select">
+          <div class="input-label" translate>
+            Coin
+          </div>
+          <select ng-model="formData.coin">
+            <option value="btc">QYB</option>
+            <option value="bch">dmb</option>
+          </select>
+        </label>
+        <label class="item item-input" ng-if="formData.ltype=='fixed'">
+          <span class="input-label" translate>Amount Each</span>
+          <input type="number" step="0.00000001" class="text-right" ignore-mouse-wheel
+                 ng-model="formData.amount"
+                 ng-required="true"
+                 ng-focus="formFocus('amount')">
+        </label>
+        <label class="item item-input" ng-if="formData.ltype=='random'">
+          <span class="input-label" translate>Total Amount</span>
+          <input type="number" step="0.00000001" class="text-right" ignore-mouse-wheel
+                 ng-model="formData.amount"
+                 ng-required="true"
+                 ng-focus="formFocus('total')">
+        </label>
+        <div class="item item-divider" ng-if="formData.ltype=='fixed'">{{'Identical Amount, ' | translate}}<a href="javascript:;" ng-click="changeLtype('random')">{{'Change to random amnout.' | translate}}</a></div>
+        <div class="item item-divider" ng-if="formData.ltype=='random'">{{'Random Amount, ' | translate}}<a href="javascript:;" ng-click="changeLtype('fixed')">{{'Change to Identical Amount.' | translate}}</a></div>
+        <label class="item item-input">
+          <span class="input-label" translate>Quantity</span>
+          <input type="number" class="text-right" ignore-mouse-wheel
+                 ng-model="formData.quantity"
+                 ng-required="true"
+                 ng-focus="formFocus('quantity')">
+        </label>
+        <!--<label class="item item-input item-stacked-label no-border">-->
+        <label class="item item-input">
+          <!--<span class="input-label" translate>Best wishes</span>-->
+          <textarea ng-model="formData.comment"
+                    placeholder="{{'Best wishes' | translate}}"
+                    rows="3"
+                    autocapitalize="off"
+                    autocomplete="off"
+                    autocorrect="off"></textarea>
+        </label>
+      </div> <!-- list -->
+      <h3 class="text-center">{{formData.totalAmount | number: 5 }}<span ng-if="formData.coin=='btc'">QYB</span><span ng-if="formData.coin=='bch'">dmb</span></h3>
+      <p class="text-center">总额=红包总金额+个数*单笔手续费</p>
+
+      <button type="submit" class="button button-standard button-primary" ng-disabled="luckymoneyForm.$invalid">
+        <span translate>Prepare Lucky Money</span>
+      </button>
+    </form>
+  </ion-content>
+
+  <simple-pay simple-pay-title="walletSelectorTitle"
+              simple-pay-wallets="wallets"
+              simple-pay-selected-wallet="wallet"
+              simple-pay-show="walletSelector"
+              simple-pay-on-select="onWalletSelect"
+              simple-pay-send-status="sendStatus"
+              simple-pay-approve="approve"
+              simple-pay-is-cordova="isCordova"
+              simple-pay-is-windows-phone-app="isWindowsPhoneApp"
+              simple-pay-status-change-handler="statusChangeHandler">
+  </simple-pay>
+</ion-view>

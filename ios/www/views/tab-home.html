@@ -1,35 +1,34 @@
 <ion-view id="tab-home" show-tabs>
   <ion-nav-bar class="bar-royal">
-    <ion-nav-title>{{'粽子钱包' | translate}}</ion-nav-title>
+    <ion-nav-title>{{'Qyb wallet' | translate}}</ion-nav-title>
     <!-- @empty -->
     <!-- <ion-nav-title><img class="tab-home__logo" src="img/app/logo-negative.svg"></ion-nav-title> -->
   </ion-nav-bar>
 
   <ion-content>
-    <ion-refresher
-     ng-if="isAndroid"
-     pulling-icon="ion-ios-refresh"
-     spinner="ios-small"
-     on-refresh="onRefresh()">
-   </ion-refresher>
+    <ion-refresher ng-if="isAndroid"
+                   pulling-icon="ion-ios-refresh"
+                   spinner="ios-small"
+                   on-refresh="onRefresh()">
+    </ion-refresher>
 
-   <div class="list card important-message ng-hide" ng-show="serverMessage">
-     <div class="close-button" ng-click="serverMessage = null"><i class="icon ion-ios-close-empty"></i></div>
-     <i class="item big-icon-svg">
-       <img src="img/alert.svg" width="50" />
-     </i>
+    <div class="list card important-message ng-hide" ng-show="serverMessage">
+      <div class="close-button" ng-click="serverMessage = null"><i class="icon ion-ios-close-empty"></i></div>
+      <i class="item big-icon-svg">
+        <img src="img/alert.svg" width="50" />
+      </i>
 
-     <div class="item alert">{{serverMessage.title}}</div>
-     <div class="item message">{{serverMessage.body}}</div>
+      <div class="item alert">{{serverMessage.title}}</div>
+      <div class="item message">{{serverMessage.body}}</div>
 
-     <div class="button" ng-click="openServerMessageLink()">
-       <span translate>Learn more</span>
-     </div>
-   </div>
+      <div class="button" ng-click="openServerMessageLink()">
+        <span translate>Learn more</span>
+      </div>
+    </div>
 
     <div class="list card important-message ng-hide" ng-show="newRelease">
       <i class="item icon big-icon-svg">
-        <img src="img/icon-update.svg" class="bg"/>
+        <img src="img/icon-update.svg" class="bg" />
       </i>
 
       <div class="item title">{{updateText}}</div>
@@ -46,7 +45,7 @@
       </div>
       <div>
         <i class="icon big-icon-svg">
-          <img src="img/check-white.svg" class="bg green"/>
+          <img src="img/check-white.svg" class="bg green" />
         </i>
       </div>
       <div class="title" translate>
@@ -75,7 +74,7 @@
         <i class="icon bp-arrow-right"></i>
         <span class="badge badge-assertive m5t m10r" ng-show="notificationsN>3"> {{notificationsN}}</span>
       </a>
-      <a class="item item-sub activity" ng-repeat="notification in notifications" ng-click="openNotificationModal(notification)">
+      <a class="item item-sub activity" ng-repeat="notification in uniqNotifications" ng-click="openNotificationModal(notification)">
         <span ng-include="'views/includes/walletActivity.html'"></span>
       </a>
     </div>
@@ -86,7 +85,7 @@
       </div>
       <a ui-sref="tabs.add" class="item item-icon-left item-big-icon-left item-icon-right next-step">
         <i class="icon big-icon-svg">
-          <img src="img/icon-wallet.svg" class="bg wallet icon-create-wallet"/>
+          <img src="img/icon-wallet.svg" class="bg wallet icon-create-wallet" />
         </i>
         <span translate>Create bitcoin wallet</span>
         <i class="icon bp-arrow-right"></i>
@@ -127,6 +126,5 @@
     <div class="ng-hide list card" ng-show="walletsBtc[0] && buyAndSellItems.length>0" ng-include="'views/includes/buyAndSellCard.html'"></div>
     <div class="ng-hide list card" ng-show="homeIntegrations.length>0" ng-include="'views/includes/homeIntegrations.html'"></div>
     <!--<div class="ng-hide list card" ng-show="nextStepsItems.length>0 && !isWindowsPhoneApp" ng-include="'views/includes/nextSteps.html'"></div>-->
-
   </ion-content>
 </ion-view>

@@ -17,7 +17,7 @@
 
     <div ng-if="!fetchingNotifications">
       <div class="list card">
-        <div class="item" ng-repeat="notification in notifications" ng-click="openNotificationModal(notification)">
+        <div class="item" ng-repeat="notification in uniqNotifications" ng-click="openNotificationModal(notification)">
           <span ng-include="'views/includes/walletActivity.html'"></span>
         </div>
 

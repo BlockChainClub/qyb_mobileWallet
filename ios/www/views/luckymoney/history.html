@@ -1,0 +1,51 @@
+<ion-view class="settings luckymoney" show-tabs>
+  <ion-nav-bar class="bar-royal">
+    <ion-nav-title>
+      <span translate>History</span>
+    </ion-nav-title>
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <!--<ion-nav-buttons side="right">
+      <button class="button back-button buttons button-clear header-item">
+        ...
+      </button>
+    </ion-nav-buttons>-->
+  </ion-nav-bar>
+
+  <ion-content>
+    <div class="padding">
+      <div class="button-bar">
+        <a class="button" ng-class="{ 'button-positive': ltype=='received' }" ng-click="changeLtype('sendout')">{{'Recevied' | translate}}</a>
+        <a class="button" ng-class="{ 'button-positive': ltype=='sendout' }" ng-click="changeLtype('sendout')">{{'Sent' | translate}}</a>
+      </div>
+    </div>
+    <div class="list card" ng-if="ltype=='received'">
+      <div>
+        <a ng-repeat="luckymoney in receivedLuckymoneys track by $index"
+           class="item item-sub item-icon-left item-big-icon-left item-icon-right wallet"
+           ng-click="openLuckymoney()">
+          <span ng-include="'views/includes/walletList.html'"></span>
+        </a>
+      </div>
+    </div>
+    <div class="list card" ng-if="ltype=='sendout'">
+      <div>
+        <a ng-repeat="luckymoney in sendoutLuckymoneys track by $index"
+           class="item item-sub item-icon-left item-big-icon-left item-icon-right wallet"
+           ng-click="openLuckymoney()">
+          <span ng-include="'views/includes/walletList.html'">
+            <span class="ng-binding">
+              Personal Wallet
+            </span>
+            <p>
+              erere
+            </p>
+            <i class="icon bp-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,73 @@
+<action-sheet action-sheet-show="show" class="wallet-selector">
+  <img class="back-arrow" src="img/icon-back-arrow.svg" ng-click="hide()">
+  <div class="header" ng-show="!walletsBtc[0] || !walletsBch[0]">{{title}}</div>
+  <div class="subheader" ng-if="walletsBtc[0] && walletsBch[0]">
+    <img class="wallet-coin-logo" src="img/icon-bitcoin.svg" width="18">
+    <span translate>Qybcoin Wallets</span>
+  </div>
+  <a ng-repeat="wallet in walletsBtc track by $index"
+     class="item item-icon-left item-big-icon-left item-icon-right wallet"
+     ng-click="selectWallet(wallet)">
+    <i class="icon big-icon-svg" ng-include="'views/includes/walletIcon.html'"></i>
+    <div class="wallet-inner">
+      <div class="wallet-details">
+        <div class="wallet-name">
+          {{wallet.name}}
+        </div>
+        <p class="wallet-balance">
+          <span ng-if="!wallet.isComplete()" class="assertive" translate>
+            Incomplete
+          </span>
+          <span ng-if="wallet.isComplete()">
+            <span ng-if="!wallet.balanceHidden">{{wallet.status.availableBalanceStr}}</span>
+            <span ng-if="wallet.balanceHidden" translate>[Balance Hidden]</span>
+          </span>
+          </span>
+          &nbsp;
+        </p>
+      </div>
+      <img class="check" src="img/icon-check-selected.svg" ng-show="selectedWallet === wallet">
+    </div>
+  </a>
+  <div class="subheader" ng-if="walletsBch[0] && walletsBtc[0]">
+    <img class="wallet-coin-logo" src="img/bitcoin-cash-logo.svg" width="22">
+    <span translate>Qybcoin Cash Wallets</span>
+  </div>
+  <a ng-repeat="wallet in walletsBch track by $index"
+     class="item item-icon-left item-big-icon-left item-icon-right wallet"
+     ng-click="selectWallet(wallet)">
+    <i class="icon big-icon-svg" ng-include="'views/includes/walletIcon.html'"></i>
+    <div class="wallet-inner">
+      <div class="wallet-details">
+        <div class="wallet-name">
+          {{wallet.name}}
+        </div>
+        <p class="wallet-balance">
+          <span ng-if="!wallet.isComplete()" class="assertive" translate>
+            Incomplete
+          </span>
+          <span ng-if="wallet.isComplete()">
+            <span ng-if="!wallet.balanceHidden">{{wallet.status.availableBalanceStr}}</span>
+            <span ng-if="wallet.balanceHidden" translate>[Balance Hidden]</span>
+          </span>
+          </span>
+          &nbsp;
+        </p>
+      </div>
+      <img class="check" src="img/icon-check-selected.svg" ng-show="selectedWallet === wallet">
+    </div>
+  </a>
+  <click-to-accept ng-click="approve(statusChangeHandler)"
+                   ng-if="(!isCordova || isWindowsPhoneApp) && selectedWallet"
+                   click-send-status="sendStatus"
+                   is-disabled="!selectedWallet" style="position:inherit">
+    {{'Click to pay' | translate}}
+  </click-to-accept>
+  <slide-to-accept ng-if="isCordova && !isWindowsPhoneApp && selectedWallet"
+                   slide-on-confirm="approve(statusChangeHandler)"
+                   slide-send-status="sendStatus"
+                   is-disabled="!selectedWallet" style="position:inherit">
+    {{'Slide to pay' | translate}}
+  </slide-to-accept>
+</action-sheet>
+

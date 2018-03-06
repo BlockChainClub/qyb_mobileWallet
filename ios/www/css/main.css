@@ -14082,6 +14082,60 @@ account-selector {
       padding-bottom: 16px;
       padding-top: 11px; }
 
+simple-pay .bp-action-sheet__sheet {
+  padding-left: 2rem;
+  padding-right: .75rem; }
+
+simple-pay .subheader {
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EFEFEF; }
+  simple-pay .subheader .wallet-coin-logo {
+    vertical-align: middle;
+    margin-right: 5px; }
+
+simple-pay .wallet-selector .wallet {
+  border: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-left: 65px;
+  padding-bottom: 0;
+  margin-bottom: 1px;
+  overflow: visible; }
+  simple-pay .wallet-selector .wallet > i {
+    padding: 0;
+    margin-left: -5px; }
+    simple-pay .wallet-selector .wallet > i > img {
+      height: 39px;
+      width: 39px;
+      padding: 4px; }
+
+simple-pay .wallet-selector .wallet-inner {
+  display: flex;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  simple-pay .wallet-selector .wallet-inner::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #EFEFEF;
+    bottom: 0;
+    right: 0;
+    content: ''; }
+  simple-pay .wallet-selector .wallet-inner .check {
+    padding: 0 1.2rem; }
+
+simple-pay .wallet-selector .wallet-details {
+  flex-grow: 1; }
+  simple-pay .wallet-selector .wallet-details .wallet-name {
+    padding-bottom: 5px; }
+  simple-pay .wallet-selector .wallet-details .wallet-balance {
+    color: #3A3A3A;
+    font-family: "Roboto-Light"; }
+
 #coinbase .spinner svg {
   stroke: #0067c8;
   fill: #0067c8; }
@@ -14998,6 +15052,19 @@ log-options #check-bar .checkbox-icon {
 
 #cash-scan a {
   cursor: pointer; }
+
+.luckymoney .bar.bar-royal {
+  border: 0;
+  background: #c04645; }
+  .luckymoney .bar.bar-royal .title {
+    color: #eacc98; }
+
+.luckymoney .button.button-clear, .luckymoney .button.button-primary {
+  background: #c04645;
+  color: #eacc98; }
+
+.luckymoney a {
+  color: #c04645; }
 
 .gravatar {
   border-radius: 3px;
